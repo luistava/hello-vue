@@ -1,18 +1,18 @@
 <template>
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <HomeComponent/>
+      <TemplateComponents/>
   </div>  
   
 </template>
 
 <script>
 
-import HomeComponent from './components/HomeComponent.vue'
+import TemplateComponents from './components/TemplateComponents.vue'
 export default {
   name: 'App',
     components:{
-      HomeComponent
+      TemplateComponents
     }
 }
 </script>
