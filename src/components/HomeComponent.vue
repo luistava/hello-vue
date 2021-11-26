@@ -2,12 +2,20 @@
 <template>
     <div class="home">
         <h1>Home Componet</h1>
+        <UsersComponent/>
+        <ProductsComponent/>
     </div>
 </template>
 
 <script>
+import UsersComponent from './UsersComponent.vue'
+import ProductsComponent from './ProductComponents.vue'
 export default {
-    home:"HomeComponent"
+    name:"HomeComponent",
+    components:{
+        UsersComponent,
+        ProductsComponent
+    }
 }
 </script>
 
