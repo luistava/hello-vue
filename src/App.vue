@@ -1,18 +1,18 @@
 <template>
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <TemplateComponents/>
+      <data-bind/>
   </div>  
   
 </template>
 
 <script>
 
-import TemplateComponents from './components/TemplateComponents.vue'
+import DataBind from './components/DataBind.vue'
 export default {
   name: 'App',
     components:{
-      TemplateComponents
+      DataBind
     }
 }
 </script>
