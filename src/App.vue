@@ -1,18 +1,31 @@
 <template>
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <data-bind/>
+      <h1>Send props Child to Parent</h1>
+      <h1>{{ title }}</h1>
+      <child-component v-on:ChangeTitle="updateTitleText($event)"/>
+      
   </div>  
   
 </template>
 
 <script>
 
-import DataBind from './components/DataBind.vue'
+import ChildComponent from './components/ChildComponent.vue'
 export default {
   name: 'App',
     components:{
-      DataBind
+      ChildComponent
+    },
+    data(){
+      return{
+        title:"Child to parent Data"
+      }
+    },
+    methods:{
+      updateTitleText(title){
+        this.title=title
+      }
     }
 }
 </script>
