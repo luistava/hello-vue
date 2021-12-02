@@ -1,9 +1,8 @@
 <template>
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <h1>Send props Child to Parent</h1>
-      <h1>{{ title }}</h1>
-      <child-component v-on:ChangeTitle="updateTitleText($event)"/>
+      <h1>Props in Vue</h1>
+      <child-component-2 v-bind:users=users />
       
   </div>  
   
@@ -11,22 +10,24 @@
 
 <script>
 
-import ChildComponent from './components/ChildComponent.vue'
+import ChildComponent2 from './components/ChildComponent2.vue'
 export default {
   name: 'App',
     components:{
-      ChildComponent
+      ChildComponent2
     },
     data(){
-      return{
-        title:"Child to parent Data"
-      }
-    },
-    methods:{
-      updateTitleText(title){
-        this.title=title
+      return {
+        users:[
+          {name:'Luis',email:'luis@mail.com'},
+          {name:'Antonio',email:'antonio@mail.com'},
+          {name:'Artur',email:'artur@mail.com'},
+          {name:'Ariel',email:'ariel@mail.com'},
+        ]
       }
     }
+    
+
 }
 </script>
 
