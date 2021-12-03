@@ -1,8 +1,8 @@
 <template>
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-      <h1>Props in Vue</h1>
-      <child-component-2 v-bind:users=users />
+      <h1>Make Form in Vue</h1> <br>
+      <login-comp/>
       
   </div>  
   
@@ -10,22 +10,13 @@
 
 <script>
 
-import ChildComponent2 from './components/ChildComponent2.vue'
+import LoginComp from './components/LoginComponent.vue'
 export default {
   name: 'App',
     components:{
-      ChildComponent2
+      LoginComp
     },
-    data(){
-      return {
-        users:[
-          {name:'Luis',email:'luis@mail.com'},
-          {name:'Antonio',email:'antonio@mail.com'},
-          {name:'Artur',email:'artur@mail.com'},
-          {name:'Ariel',email:'ariel@mail.com'},
-        ]
-      }
-    }
+    
     
 
 }

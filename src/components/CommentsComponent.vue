@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    name:"Component",
+    name:"CommentsComponent",
     data() {
                 return {
                     comments: [],
