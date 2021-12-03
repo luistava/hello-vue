@@ -2,7 +2,7 @@
   <div>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
       <h1>Make Form in Vue</h1> <br>
-      <login-comp/>
+      <sign-up/>
       
   </div>  
   
@@ -10,11 +10,11 @@
 
 <script>
 
-import LoginComp from './components/LoginComponent.vue'
+import SignUp from './components/SignUp.vue'
 export default {
   name: 'App',
     components:{
-      LoginComp
+      SignUp
     },
     
     
